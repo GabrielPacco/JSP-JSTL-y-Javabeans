@@ -5,15 +5,23 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>BIENVENIDO</title>
+<style>
+body{
+  background-color: rgba(255,128,0);
+  text-align: center;
+  color: black;
+  font-family: calibri;
+}
+</style>
 </head>
 <body>
-
-Bienvenido, <c:out value="${person.name}" default="desconocida"/>
-
-<c:forEach var="person" items="${persons}">
-    <c:out value="${person.name}"/>
-</c:forEach>
+<div class = "title">
+<h1>Bienvenido: <c:out value="${datos.message }" /> </h1>
+<p > Valor de la variable de control: <c:out value="${datos.numero }" default="mensaje de bienvenida" /><br>
+<p class="p1"> Fecha: <c:out value="${fecha}" />
+<p class="p1"> Sistema: <c:out value="${sistema}" />
+</div>
 
 </body>
 </html>
